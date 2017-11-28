@@ -22,7 +22,7 @@ $(document).ready(function() {
         //Creates the content with all the results
         for (var i=0; i<data[1].length; i++){
 
-          $('.container').reverse().append('<div class="result">' + '<a class="title" target="_blank" href="' + data[3][i] + '">' + '<h3 class="enlace">' + data[1][i] + '</h3>' + '</a>' + '<p class="description">' + data[2][i] + '</p>');
+          $('.container').reverse().prepend('<div class="result">' + '<a class="title" target="_blank" href="' + data[3][i] + '">' + '<h3 class="enlace">' + data[1][i] + '</h3>' + '</a>' + '<p class="description">' + data[2][i] + '</p>');
         }
 
         //Remove the welcome message when you make a search
